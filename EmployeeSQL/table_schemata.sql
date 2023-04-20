@@ -60,3 +60,6 @@ REFERENCES employees (emp_no);
 ALTER TABLE department_employee ADD CONSTRAINT fk_department_employee_dept_no FOREIGN KEY(dept_no)
 REFERENCES departments (dept_no);
 
+ALTER TABLE department_manager ADD PRIMARY KEY (emp_no, dept_no);
+ALTER TABLE department_employee ADD PRIMARY KEY (emp_no, dept_no);
+
