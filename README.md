@@ -1,11 +1,10 @@
 # SQL Challenge
 
 ## Data Modeling
-
-![ERD_image](https://user-images.githubusercontent.com/122246053/233492435-622357cc-733c-477f-b018-4fabbc21491f.png)
+![ERD_Image](https://user-images.githubusercontent.com/122246053/233497548-7839c967-be31-4185-8adc-c5750e299cd1.png)
 
 ## Data Engineering
-[ERD_Detail.pdf](https://github.com/domoto86/sql-challenge/files/11290629/ERD_Detail.pdf)
+[ERD_Detail.pdf](https://github.com/domoto86/sql-challenge/files/11290772/ERD_Detail.pdf)
 
 ## Data Analysis
 1. SELECT employees.emp_no, last_name, first_name, sex, salary FROM employees</br>
