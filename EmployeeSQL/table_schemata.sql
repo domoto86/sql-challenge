@@ -1,3 +1,10 @@
+DROP TABLE IF EXISTS department_manager;
+DROP TABLE IF EXISTS department_employee;
+DROP TABLE IF EXISTS salaries;
+DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS departments;
+DROP TABLE IF EXISTS titles;
+
 CREATE TABLE employees (
     emp_no INTEGER   NOT NULL,
     emp_title_id VARCHAR   NOT NULL,
