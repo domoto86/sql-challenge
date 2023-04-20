@@ -6,23 +6,27 @@ DROP TABLE IF EXISTS title;
 DROP TABLE IF EXISTS department_employee;
 
 CREATE TABLE employees (
-	emp_no integer primary key,
-	emp_title_id varchar,
-	birth_date date,
-	first_name varchar,
-	last_name varchar,
+	emp_no integer NOT NULL,
+	emp_title_id varchar NOT NULL,
+	birth_date date NOT NULL,
+	first_name varchar NOT NULL,
+	last_name varchar NOT NULL,
 	sex varchar,
-	hire_date date
+	hire_date date NOT NULL,
+	FOREIGN KEY (emp_title_id) REFERENCES titles (title_id),
+	PRIMARY KEY (emp_no)
 );
 
 CREATE TABLE department_manager (
 	dept_no varchar,
 	emp_no int,
+	primary key (dept_no,emp_no)
 );
 
 CREATE TABLE departments (
-	dept_no varchar primary key,
+	dept_no varchar,
 	dept_name varchar,
+	PRIMARY KEY (dept_no)
 );
 
 CREATE TABLE salaries (
